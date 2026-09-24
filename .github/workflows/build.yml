@@ -6,6 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: unzip -q StripBawah.zip
+      - run: cp app/src/main/java/com/example/bottomstrip/OverlayService.kt StripBawah/app/src/main/java/com/example/bottomstrip/OverlayService.kt
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
